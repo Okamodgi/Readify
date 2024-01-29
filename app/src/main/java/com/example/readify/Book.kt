@@ -1,17 +1,17 @@
 package com.example.readify
 
 data class Book (
-    val article : Int, /*1 user: M book*/
+    val article : Int,
     val realiseDate: String,
     val title: String,
     val publication : String,
     val author: String,
     val genre: String,
-    val isAvailable: Boolean,
+    val isAvailable: Boolean, /*TODO QUERY CHANGE isAvailiable*/
     val description : String
 )
 
-data class User(
+data class User( /*TODO CREATE User*/
     val id: Int,
     val name : String,
     val email : String,
@@ -28,5 +28,5 @@ data class Loans(
     val userId: Int,
     val bookId : Int,
     val loanDate : String,
-    val returnDate : String
+    val returnDate : String /*TODO QUERY CHANGE returnDate*/
 )
